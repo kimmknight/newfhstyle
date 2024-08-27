@@ -1,13 +1,18 @@
+body, html {
+    width: 100%;
+    max-width: 100%;
+}
+
 body {
     padding-right: 0px;
     padding-left: 0px;
-    font-size: 100%;
+    font-size: 110%;
     padding-bottom: 0px;
     margin: 0px;
     color: #000000;
     padding-top: 0px;
-    font-family: Verdana, Arial, sans-serif;
-    background-color: #ffffff;
+    font-family: "Trebuchet MS", sans-serif;
+    background-color: #FFEFD9;
 }
 
 .fhcontent {
@@ -42,9 +47,18 @@ body {
 }
 
 p {
-    font-size: 100%;
+    line-height: 1.5;
     margin-block-start: 0em;
-    margin-block-end: 0.5em; 
+    margin-block-end: 0.5em;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+.fhimgwrap p {
+    font-size: small;
+    font-weight: 550;
+    line-height: 1;
 }
 
 .FhWelcome {
@@ -74,8 +88,9 @@ p {
 }
 
 .FhSiteTitle {
-    font-size: large;
+    font-size: x-large;
     font-weight: bold;
+    text-align: center;
     margin-bottom: 1em;
 }
 
@@ -88,15 +103,12 @@ p {
 }
 
 .fhimgdimc640 img {
-    width: 100%;
     margin: 0;
+    margin-bottom: 0.5em;
 }
 
-.fhimgcolumn {
-    float: right;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+img {
+    max-width: 100%;
 }
 
 .fhimgwrap {
@@ -105,12 +117,6 @@ p {
 }
 .fhimgwrap img {
     border: 1px black solid;
-}
-.fhimgcolumn {
-    float: right;
-    margin-left: 10px;
-    margin-top: 10px;
-    clear: both;
 }
 .fhimgleft {
     overflow: auto;
@@ -171,7 +177,7 @@ p {
     min-height: 350px;
 }
 
-@media screen and (min-width: 480) /* responsive layout - wide */ {
+@media screen and (min-width: 480px) /* responsive layout - wide */ {
     .fhresponsive ul.table-border li {
         border: thin solid black;
     }
@@ -181,8 +187,24 @@ p {
         grid-gap: 1px;
         list-style-type: none;
     }
-    .fhTable li {
+    .fhimgcolumn {
+        float: right !important;
+        flex-direction: column !important;
+        align-items: start !important;
+        flex-wrap: nowrap !important;
+        gap: 0 !important;
     }
+    
+}
+
+.fhimgcolumn {
+    float: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 a {
@@ -192,6 +214,11 @@ a {
 .fhstdtable {
     min-width: 15em;
 }
+
+.FhHdg1 {
+    margin-bottom: 1em;
+}
+
 .b {
     font-weight: bold;
 }
