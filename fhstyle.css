@@ -193,6 +193,7 @@ img {
         align-items: start !important;
         flex-wrap: nowrap !important;
         gap: 0 !important;
+        clear: right;
     }
     
 }
