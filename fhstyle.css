@@ -80,7 +80,7 @@ sup::before {
     content: " ";
 }
 
-dl.FhDefList {
+.FhDefList {
     overflow-wrap: break-word;
 }
 
