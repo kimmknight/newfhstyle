@@ -7,7 +7,7 @@ html {
 body {
     padding-right: 0px;
     padding-left: 0px;
-    font-size: 1em;
+    font-size: 1.17em;
     padding-bottom: 0px;
     margin: 0px;
     color: #000000;
@@ -44,7 +44,8 @@ body {
 
 #menubar a {
     text-decoration: none;
-    font-size: 0.8em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.65em;
     font-variant: small-caps;
     color: #0000ff;
     line-height: 1.5em;
@@ -57,6 +58,7 @@ body {
 
 a {
     text-decoration: none;
+    font-weight: 550;
 }
 
 a:hover {
@@ -67,9 +69,15 @@ p {
     line-height: 1.2;
     margin-block-start: 0em;
     margin-block-end: 0em;
-    word-break: break-word;
-    overflow-wrap: break-word;
     hyphens: auto;
+}
+
+sup {
+    overflow-wrap: anywhere;
+}
+
+sup::before {
+    content: " ";
 }
 
 .fhzonexr107 p {
@@ -84,10 +92,13 @@ p {
 
 .FhWelcome {
     margin-bottom: 1em;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
 }
 
 #header {
-    height: 136px;
+    height: 96px;
     display: flex;
     align-items: center;
     overflow: hidden;
